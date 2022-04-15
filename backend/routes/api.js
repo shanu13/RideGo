@@ -49,6 +49,7 @@ router.get('/getUser', async(req,res) => {
 
 router.post('/saveTrip', async (req,res) => {
   const  { pickupLocation, dropoffLocation,userWalletAddress,price,selectedRide } = req.body
+  console.log(req.body)
   try{
       const ride = new Trips({
         dropoff : dropoffLocation,
@@ -59,6 +60,7 @@ router.post('/saveTrip', async (req,res) => {
       })
 
         await ride.save();
+        console.log(ride)
         res.status(200).send({ message: 'success' })
   }catch(error){
     res.status(500).send({ message: 'error', data: error.message })

@@ -27,8 +27,23 @@ const Confirm = () => {
   } = useContext(UberContext)
 
   const storeTripDetails = async (pickup, dropoff) => {
+    
     try {
-      await fetch('http://localhost:5000/saveTrip', {
+     
+console.log(price)
+      await metamask.request({
+        method: 'eth_sendTransaction',
+        params: [
+          {
+            from: currentAccount,
+            to: '0x59DF53029502707E9B6D63C885e12FF35597d561',
+            gas: '21000', // 520000 Gwei
+            value: ethers.utils.parseEther(price)._hex,
+          },
+        ],
+      })
+
+      const response =  await fetch('http://localhost:5000/saveTrip', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,21 +53,11 @@ const Confirm = () => {
           dropoffLocation: dropoff,
           userWalletAddress: currentAccount,
           price: price,
-          selectedRide: selectedRide,
+          selectedRide: selectedRide.service,
         }),
       })
-console.log(price)
-      await metamask.request({
-        method: 'eth_sendTransaction',
-        params: [
-          {
-            from: currentAccount,
-            to: '0x59DF53029502707E9B6D63C885e12FF35597d561',
-            gas: '0x7EF40', // 520000 Gwei
-            value: ethers.utils.parseEther(price)._hex,
-          },
-        ],
-      })
+      const data = await response.json();
+      console.log('data',data.message);
 
       router.push('/confirm')
 
