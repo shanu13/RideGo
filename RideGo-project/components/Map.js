@@ -57,6 +57,19 @@ useEffect(() =>{
       center: [91.55845402235552, 26.080719523125097],
       zoom: 11,
     })
+      
+      map.addControl(
+      new mapboxgl.GeolocateControl({
+      positionOptions: {
+      enableHighAccuracy: true
+      },
+      // When active the map will receive updates to the device's location as it changes.
+          trackUserLocation: true,
+      showUserLocation: true,
+      // Draw an arrow next to the location dot to indicate which direction the device is heading.
+      showUserHeading: true
+      })
+      );
 
     if (pickupCoordinates) {
       addToMap(map, pickupCoordinates)
