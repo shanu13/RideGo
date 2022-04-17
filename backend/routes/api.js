@@ -3,6 +3,10 @@ const router = express.Router();
 const User = require('../Schema/UserSchema');
 const Trips = require('../Schema/TripSchema');
 
+router.get('/',(req, res) => {
+    res.send('<h1> server running </h1>')
+})
+
 router.post('/login' , async(req,res)=>{
     const {userWalletAddress, name} = req.body;
     
