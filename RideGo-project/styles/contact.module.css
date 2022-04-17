@@ -11,6 +11,19 @@
     width: auto;
 }
 
+/* .img {
+    z-index: -1;
+} */
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left, .right {
+    margin-top: 4rem;
+}
+
 .heading {
     font-size: 3rem;
     font-weight: bold;
@@ -34,4 +47,12 @@
 .sub {
     font-size: 2rem;
     font-weight: bold;
+}
+
+.clickMe {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: 3px solid black;
+    border-radius: 20px;
 }

@@ -1,7 +1,4 @@
-import { useRouter } from "next/router";
-
 import Navbar from "../components/Navbar";
-// import style from "../styles/globals.css"
 
 const style = {
     wrapper: `flex-1 w-full h-full`,
@@ -10,13 +7,7 @@ const style = {
     ques: 'text-2xl font-bold mt-6'
 }
 
-
 export default function Help() {
-    const router = useRouter();
-
-    
-
-
     return (
         <>
             <div className={style.wrapper}>

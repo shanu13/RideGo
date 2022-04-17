@@ -18,7 +18,7 @@ export default function myTrips() {
             <div >
                 <Navbar />
             </div>
-x
+
             <div className={style.middle}>
                 <GetTrips/>
             </div>

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/link-passhref */
 import Image from 'next/image'
 import avatar from '../temp/avatar.jpg'
 import Link from 'next/link'
@@ -21,12 +19,7 @@ const style = {
 }
 
 const Navbar = () => {
-  const { currentAccount, connectWallet, currentUser } = useContext(UberContext)
-  const Logout = async() =>{
-    console.log('logout')
-    await window.ethereum.disconnect()  
-  }
-  
+    const { currentAccount, connectWallet, currentUser } = useContext(UberContext);
 
   return (
     <div className={style.wrapper}>
@@ -51,7 +44,6 @@ const Navbar = () => {
         {currentAccount ? (
           <div>
             {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
-            {/* <button onClick={Logout}  className={style.logout}>Logout</button> */}
           </div>
         ) : (
           <div className={style.loginButton} onClick={() => connectWallet()}>

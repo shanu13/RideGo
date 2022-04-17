@@ -1,0 +1,25 @@
+.heading {
+    margin-bottom: 1.5rem;
+    margin-top: 6rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+
+.trip {
+    margin: 2rem;
+    padding: 3rem;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.one {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.cards {
+    display: flex;
+}

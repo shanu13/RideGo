@@ -3,19 +3,11 @@ import { useContext } from 'react'
 import { useRouter } from 'next/router'
 import { UberContext } from '../context/uberContext'
 
-const style = {
-    heading: "mt-24 mb-6 text-4xl",
-    trip: "m-12",
-    one: "pl-12 pr-12 pb-8 text-xl font-bold",
-    two: "pl-12 pr-12 pb-8 text-xl",
-}
-
-
+import style from "../styles/getTrips.module.css"
 
 export default function GetTrips() {
     const {currentAccount} = useContext(UberContext);
     const [myTrips,setMyTrips] = useState([]);
-
 
     const Get = async (account) => {
         return new Promise(async(resolve, reject) => {
@@ -42,10 +34,6 @@ export default function GetTrips() {
           
     }
 
-    // useEffect(() => {
-      
-    // })
-
     useEffect( () => {
         if(!currentAccount)
         setTimeout(3000)
@@ -54,24 +42,31 @@ export default function GetTrips() {
             console.log(myTrips)
         })()
       
-    },[currentAccount])
+    }, [currentAccount])
+    
+    function capitalize(str) {
+        const arr = str.split(" ");
+
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+
+        }
+
+        return arr.join(" ");
+    }
     
 
   return (
     <>
     <div className={style.doc}> <h1 className={style.heading}> My Trips  </h1></div>
-    <div> {myTrips.map(trip => {
+    <div className={style.cards}> {myTrips.map(trip => {
         return (
             <div className={style.trip} key={trip._id}>
-                <div className={style.oneH}>
-                    <span className={style.one}>Pickup: {trip.pickup}</span>
-                    <span className={style.one}>DropOff: {trip.dropoff}</span>
-                    <span className={style.one}>Fare: {trip.price} ETH</span>
-                </div>
-                <div className={style.twoH}>
-                    <span className={style.two}>Ride Type: {trip.rideCategory}</span>
-                    <span className={style.two}>Booking Time: {trip.time.substring(11,16)}, {trip.time.substring(0,10)}</span>
-                </div>
+                    <li className={style.one}>Pickup: {capitalize(trip.pickup)}</li>
+                    <li className={style.one}>DropOff: {capitalize(trip.dropoff)}</li>
+                    <li className={style.one}>Fare: {capitalize(trip.price)} ETH</li>
+                    <li className={style.one}>Ride Type: {capitalize(trip.rideCategory)}</li>
+                    <li className={style.one}>Booking Time: {trip.time.substring(11,16)}, {trip.time.substring(0,10)}</li>
             </div>
             
         )
