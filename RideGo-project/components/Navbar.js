@@ -35,7 +35,8 @@ const Navbar = () => {
         <Link href = '/'><div className={style.menuItem}>Ride</div></Link>
         <Link href = '/mytrips'><div className={style.menuItem}>{currentAccount? 'myTrips' : '' }</div></Link>
         
-        <Link href = '/help'><div className={style.menuItem}>Help</div></Link>
+              <Link href='/help'><div className={style.menuItem}>Help</div></Link>
+              <Link href = '/contact'><div className={style.menuItem}>Contact</div></Link>
       </div>
       <div className={style.rightMenu}>
         <div className={style.menuItem}>{currentUser.name}</div>
