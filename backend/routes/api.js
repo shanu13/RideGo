@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require('../Schema/UserSchema');
 const Trips = require('../Schema/TripSchema');
 
-router.post('/createUser' , async(req,res)=>{
+router.post('/login' , async(req,res)=>{
     const {userWalletAddress, name} = req.body;
     
 
@@ -31,7 +31,7 @@ router.post('/createUser' , async(req,res)=>{
 
 router.get('/getUser', async(req,res) => {
     const address = req.query.walletAddress;
-    console.log('/get user',address)
+    
     try{
         const user = await User.findOne({wallet_address : address})
         if(!user){
@@ -71,6 +71,7 @@ router.post('/getTrips', async (req,res) => {
     const address = req.body.address;
     console.log(address)
     try{
+        if(!address) throw Error('Invalid Address')
         const trips = await Trips.find({address : address});
         console.log(trips);
         res.status(200).send({ message: 'success',trips : trips});

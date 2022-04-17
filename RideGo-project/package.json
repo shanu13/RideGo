@@ -12,7 +12,7 @@
     "@emailjs/browser": "^3.6.2",
     "@faker-js/faker": "^6.0.0-alpha.7",
     "@sanity/client": "^3.3.0",
-    "emailjs": "^3.8.0",
+    "emailjs": "^3.8.1",
     "ethers": "^5.5.4",
     "mapbox-gl": "^2.7.0",
     "next": "12.1.0",

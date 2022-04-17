@@ -135,7 +135,7 @@ export const UberProvider = ({ children }) => {
   const requestToCreateUserOnSanity = async address => {
     if (!window.ethereum) return
     try {
-      await fetch('http://localhost:5000/createUser', {
+      await fetch('http://localhost:5000/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
