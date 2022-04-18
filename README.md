@@ -10,6 +10,7 @@ cd RideGo-project
 npm install
 npm run dev
 cd backend
+npm install
 npm start
 ```
 
@@ -19,7 +20,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 
 
-## Deploed on Heroku
+## Deployed on Heroku
 
 - ### HEre You can see the app : [LINK](https://ride-go-frontend.herokuapp.com/)
 
