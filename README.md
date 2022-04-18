@@ -17,25 +17,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Deploed on Heroku
 
-To learn more about Next.js, take a look at the following resources:
+- ### HEre You can see the app : [LINK](https://ride-go-frontend.herokuapp.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
+-Backend Server hosted on :[LINK](https://ride-go-backend.herokuapp.com/)
 
 
 
@@ -43,7 +31,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - #### Software Requirements Specification (SRS) : [Pdf Link](https://docs.google.com/document/d/13ctW_9F0-l-7_JH4q7pc3jDr45CWG9Zh/edit?usp=sharing&ouid=103063758416728946014&rtpof=true&sd=true)
 - #### Data Flow Diagram : [Pdf Link](https://drive.google.com/file/d/16p1A_pf6t-7IDvSdCKDH7zTyBGyeAKFW/view?usp=sharing)
 - #### Use Case Diagram : [Pdf Link]()
-- #### Testing Report : [Pdf Link]()
+- #### Testing Report : [Pdf Link](https://docs.google.com/document/d/1MVmp5RrzZvlWQNLSuw9Qa7d7ug6m_hCfQekmbkFuTdk/edit?usp=sharing)
 
 <br>
 <br>
