@@ -29,7 +29,7 @@ and then press login to use metamask
 
 ## Deployed on Heroku
 
-- ### Here You can see the app : [LINK](https://ride-go-frontend.herokuapp.com/)
+- ### Here You can see the app(Metamask extension required for login (installation guide given above ): [LINK](https://ride-go-frontend.herokuapp.com/)
 
 - ### Backend Server hosted on :[LINK](https://ride-go-backend.herokuapp.com/)
 
