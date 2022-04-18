@@ -16,10 +16,10 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### To do login  payment and to use the Metamask should be present for sure and you must have test ether in your wallet.If you dont have
-installed install using :[LINK](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
+### To do login  payment and to use the Metamask should be present for sure and you must have test ether in your wallet.If you dont have see below
+Metamask Extension and Wallet:[LINK](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
 
 
 
