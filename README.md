@@ -33,6 +33,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - #### Data Flow Diagram : [Pdf Link](https://drive.google.com/file/d/16p1A_pf6t-7IDvSdCKDH7zTyBGyeAKFW/view?usp=sharing)
 - #### Use Case Diagram : [Pdf Link]()
 - #### Testing Report : [Pdf Link](https://docs.google.com/document/d/1MVmp5RrzZvlWQNLSuw9Qa7d7ug6m_hCfQekmbkFuTdk/edit?usp=sharing)
+- #### PPt :[PDF Link](https://docs.google.com/document/d/1owDteT3XcIEtn6bqElXAo6-nYHHd3mrH/edit?usp=sharing&ouid=103063758416728946014&rtpof=true&sd=true)
+- 
 
 <br>
 <br>
