@@ -10,6 +10,7 @@ cd RideGo-project
 npm install
 npm run dev
 cd backend
+npm install
 npm start
 ```
 
@@ -17,33 +18,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Deployed on Heroku
 
-To learn more about Next.js, take a look at the following resources:
+- ### Here You can see the app : [LINK](https://ride-go-frontend.herokuapp.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
+- ### Backend Server hosted on :[LINK](https://ride-go-backend.herokuapp.com/)
 
 
 
 # Documents
 - #### Software Requirements Specification (SRS) : [Pdf Link](https://docs.google.com/document/d/13ctW_9F0-l-7_JH4q7pc3jDr45CWG9Zh/edit?usp=sharing&ouid=103063758416728946014&rtpof=true&sd=true)
 - #### Data Flow Diagram : [Pdf Link](https://drive.google.com/file/d/16p1A_pf6t-7IDvSdCKDH7zTyBGyeAKFW/view?usp=sharing)
-- #### Use Case Diagram : [Pdf Link]()
-- #### Testing Report : [Pdf Link]()
+- #### Use Case Diagram : [Pdf Link](https://drive.google.com/file/d/1nQykvBAYENfiMXO4LlcA2L2lZPTL2bD9/view?usp=sharing)
+- #### Testing Report : [Pdf Link](https://docs.google.com/document/d/1MVmp5RrzZvlWQNLSuw9Qa7d7ug6m_hCfQekmbkFuTdk/edit?usp=sharing)
+- #### PPT :[PDF Link](https://docs.google.com/document/d/1owDteT3XcIEtn6bqElXAo6-nYHHd3mrH/edit?usp=sharing&ouid=103063758416728946014&rtpof=true&sd=true)
+
 
 <br>
 <br>
