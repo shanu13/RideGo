@@ -22,9 +22,9 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Deployed on Heroku
 
-- ### HEre You can see the app : [LINK](https://ride-go-frontend.herokuapp.com/)
+- ### Here You can see the app : [LINK](https://ride-go-frontend.herokuapp.com/)
 
--Backend Server hosted on :[LINK](https://ride-go-backend.herokuapp.com/)
+-### Backend Server hosted on :[LINK](https://ride-go-backend.herokuapp.com/)
 
 
 
