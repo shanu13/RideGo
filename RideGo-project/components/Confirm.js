@@ -29,7 +29,10 @@ const Confirm = () => {
   const storeTripDetails = async (pickup, dropoff) => {
     
     try {
-     
+     if(!currentAccount ) {
+       alert('Please Login ')
+       return;
+     }
 console.log(price)
       await metamask.request({
         method: 'eth_sendTransaction',

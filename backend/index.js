@@ -12,16 +12,7 @@ app.use(bodyParser.json());
 app.use(cors())
 app.use(api);
 
-// mongoose.connect("mongodb://localhost:27017/rideGo" ,(err) => {
-//     if(err){
-//         console.log(err)
-//         return;
-//     }
-
-//     console.log('database connected')
-// })
-
-mongoose.connect(process.env.MONGO_URI ,{ useUnifiedTopology: true },(err) => {
+mongoose.connect("mongodb://localhost:27017/rideGo" ,(err) => {
     if(err){
         console.log(err)
         return;
@@ -29,6 +20,15 @@ mongoose.connect(process.env.MONGO_URI ,{ useUnifiedTopology: true },(err) => {
 
     console.log('database connected')
 })
+
+// mongoose.connect(process.env.MONGO_URI ,{ useUnifiedTopology: true },(err) => {
+//     if(err){
+//         console.log(err)
+//         return;
+//     }
+
+//     console.log('database connected')
+// })
 
 app.listen(process.env.PORT || 5000, (err)=>{
     if(!err){
