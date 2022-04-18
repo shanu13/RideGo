@@ -16,7 +16,7 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-###### To do login  payment and to use the Metamask should be present for sure and you must have test ether in your wallet.If you dont have use the below link
+### To do login  payment and to use the Metamask should be present for sure and you must have test ether in your wallet.If you dont have use the below link
 #### Metamask Extension and Wallet : [LINK](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 ```
 Select the add to chrome option.
